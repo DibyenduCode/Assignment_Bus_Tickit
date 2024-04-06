@@ -64,7 +64,7 @@
             <h1 class="text-7xl font-bold text-[#1DD100] pb-4">P Paribahan</h1>
             <p class="mb-5 text-whit pb-4e text-xl">Yes, you can run unit tests and view the results directly within the
               app. The integrated testing features allow for a streamlined .</p>
-            <button class="btn bg-[#1DD100]">Buy Tickets</button>
+            <a class="btn bg-[#1DD100]" href="#tickitvooking" >Buy Tickets</a>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@
                 <div>
                   <img src="images/seat-green.png" alt="">
                 </div>
-                <p class="text-[#1DD100]">40 Seats left</p>
+                <p class="text-[#1DD100]"><span id="seatLeft">40</span> Seats left</p>
               </div>
             </div>
             <!-- ticket info with timing -->
@@ -212,7 +212,7 @@
 
       </div>
       <!-- main set bookig System -->
-      <section class="mx-28  bg-[#ffffff] rounded-xl flex p-10">
+      <section class="mx-28  bg-[#ffffff] rounded-xl flex p-10" id="tickitvooking">
         <div class="w-[673px]">
           <h1 class="text-2xl pb-3">Select Your Seat</h1>
           <hr class="pb-3">
@@ -234,55 +234,55 @@
           <div class="pt-11">
           <div class="grid grid-cols-5 gap-6">
             <p class="text-center">A</p>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">A1</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">A2</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">A3</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">A4</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="A1" onclick="clickA1()">A1</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="A2" onclick="clickA2()">A2</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="A3" onclick="clickA3()">A3</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="A4" onclick="clickA4()">A4</button>
             <p class="text-center">B</p>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">B1</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">B2</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">B3</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">B4</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="B1" onclick="clickB1()">B1</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="B2" onclick="clickB2()">B2</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="B3" onclick="clickB3()">B3</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="B4" onclick="clickB4()">B4</button>
             <p class="text-center">C</p>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">C1</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">C2</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">C3</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">C4</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="C1" onclick="clickC1()">C1</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="C2" onclick="clickC2()">C2</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="C3" onclick="clickC3()">C3</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="C4" onclick="clickC4()">C4</button>
             <p class="text-center">D</p>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">D1</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">D2</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">D3</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">D4</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="D1" onclick="clickD1()">D1</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="D2" onclick="clickD2()">D2</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="D3" onclick="clickD3()">D3</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="D4" onclick="clickD4()">D4</button>
             <p class="text-center">E</p>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">E1</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">E2</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">E3</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">E4</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="E1" onclick="clickE1()">E1</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="E2" onclick="clickE2()">E2</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="E3" onclick="clickE3()">E3</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="E4" onclick="clickE4()">E4</button>
             <p class="text-center">F</p>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">F1</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">F2</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">F3</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">F4</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="F1" onclick="clickF1()">F1</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="F2" onclick="clickF2()">F2</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="F3" onclick="clickF3()">F3</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="F4" onclick="clickF4()">F4</button>
             <p class="text-center">G</p>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">G1</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">G2</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">G3</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">G4</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="G1" onclick="clickG1()">G1</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="G2" onclick="clickG2()">G2</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="G3" onclick="clickG3()">G3</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="G4" onclick="clickG4()">G4</button>
             <p class="text-center">H</p>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">H1</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">H2</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">H3</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">H4</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="H1" onclick="clickH1()">H1</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="H2" onclick="clickH2()">H2</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="H3" onclick="clickH3()">H3</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="H4" onclick="clickH4()">H4</button>
             <p class="text-center">I</p>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">I1</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">I2</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">I3</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">I4</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="I1" onclick="clickI1()">I1</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="I2" onclick="clickI2()">I2</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="I3" onclick="clickI3()">I3</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="I4" onclick="clickI4()">I4</button>
             <p class="text-center">J</p>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">J1</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">J2</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">J3</button>
-            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm">J4</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="J1" onclick="clickJ1()">J1</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="J2" onclick="clickJ2()">J2</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="J3" onclick="clickJ3()">J3</button>
+            <button class="px-7 py-4 mr-11 bg-[#0307121A] btn rounded-sm" id="J4" onclick="clickJ4()">J4</button>
             
           </div>
         </div>
@@ -295,36 +295,33 @@
           <!-- Price Calculation section -->
           <div class="bg-[#F7F8F8] p-3 mb-6 rounded-lg">
             <div class="flex space-x-[180px] pb-3">
-              <p class="text-[16px] ">Seat<span class="bg-[#1DD100] rounded-2xl text-white">2</span></p>
+              <p class="text-[16px] ">Seat<span class="bg-[#1DD100] rounded-2xl text-white" id="bookedseatnum">0</span></p>
               <p class="text-[16px] ">Class</p>
               <p class="text-[16px] ">Price</p>
             </div>
-            <hr class="pb-3">
-            <div class="flex space-x-[178px] pb-3">
-              <p class="text-[16px] ">C2</p>
-              <p class="text-[16px] ">Economoy</p>
-              <p class="text-[16px] ">550</p>
+            <div id="nomoreseats" role="alert" class="alert alert-error hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span>You Can Not Book More Than 4 Seats</span>
             </div>
-            <div class="flex space-x-[178px] pb-3">
-              <p class="text-[16px] ">C2</p>
-              <p class="text-[16px] ">Economoy</p>
-              <p class="text-[16px] ">550</p>
+            <hr class="pb-3">
+            <div id="seats">
+           
             </div>
             <hr class="pb-3">
             <div class="flex space-x-[334px] pb-3">
               <p class="text-[15px] ">Total Price</p>
-              <p class="text-[15px] ">BDT 1100</p>
+              <p class="text-[15px] ">BDT <span id="totalPrice">00</span></p>
             </div>
-            <div class="pb-3">
+            <div class="pb-3" id="cuponsec">
             <label class="input input-bordered flex items-center gap-2">
-              <input type="text" class="grow" placeholder="Have any copupon?" />
-              <button class="btn bg-[#1DD100] text-white">Apply</button>
+              <input type="text" class="grow" placeholder="Have any copupon?" id="cuponplace" disabled/>
+              <button class="btn bg-[#1DD100] text-white" id="cuponbtn" disabled onclick="discouncupon()">Apply</button>
             </label>
           </div>
 
             <div class="flex space-x-[334px] pb-3">
-              <p class="text-[15px]">Grand Total</p>
-              <p class="text-[15px]">BDT 1100</p>
+              <p class="text-[14px]">Grand Total</p>
+              <p class="text-[14px]">BDT <span id="gtotal">0</span></p>
             </div>
           </div>
 
@@ -336,9 +333,9 @@
   <p class="mb-4">Passenger Name*</p>
   <input type="text" placeholder="Type here" class="input input-bordered w-full mb-6" />
   <p class="mb-4">Phone Number*</p>
-  <input type="text" placeholder="Type here" class="input input-bordered w-full mb-6" />
+  <input type="number" placeholder="Type here" class="input input-bordered w-full mb-6" />
   <p class="mb-4">Email ID*</p>
-  <input type="text" placeholder="Type here" class="input input-bordered w-full mb-6" />
+  <input type="email" placeholder="Type here" class="input input-bordered w-full mb-6" />
   <button class="btn bg-[#1DD100] text-white w-full mb-6">Apply</button>
   <div class="flex space-x-[200px]">
     <a href="#">Terms and Conditions</a>
@@ -381,6 +378,8 @@
       <P> Privacy policy</P>
     </nav>
   </div>
+  <script src="javascript/util.js"></script>
+  <script src="javascript/main.js"></script>
 </body>
 
 </html>
