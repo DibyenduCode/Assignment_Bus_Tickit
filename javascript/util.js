@@ -41,8 +41,12 @@ function totalprice(){
     const updateprice=numbofseats*550;
     document.getElementById("totalPrice").innerText=updateprice;
     document.getElementById("gtotal").innerText=updateprice;
-    
-
     return updateprice;
 
+}
+
+function submiton(){
+    document.getElementById("phone").addEventListener("keyup",function(){
+    document.getElementById("next").removeAttribute("disabled");
+    })
 }
